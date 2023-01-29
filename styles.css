@@ -1,0 +1,280 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* My Style */
+/* font-famyli */
+body {
+  font-family: "Source Code Pro", monospace, "Lucida Sans Regular", Verdana, sans-serif;
+}
+/* background */
+body {
+  background-image: url("img/background.png");
+  background-position: center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  overflow-x: hidden;
+}
+/* navbar */
+.container-fluid {
+  font-size: 18px;
+}
+.nav-link {
+  position: relative;
+}
+.nav-link::after {
+  content: "";
+  transition: all 0.2s;
+  opacity: 0;
+  height: 2px;
+  width: 100%;
+  background-color: white;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+.nav-link:hover::after {
+  opacity: 1;
+}
+
+/* my logo */
+img#mylogo {
+  display: flex;
+  width: 60px;
+  height: 60px;
+  padding-top: -20px;
+  padding-bottom: -20px;
+  transition: 0.3s ease-in-out;
+}
+img#mylogo:hover {
+  transform: scale(1.2);
+}
+/* slide carousel */
+.carousel-item {
+  background-size: cover;
+}
+/* main content */
+/* card web programing dasar html css js */
+.kategori-1 {
+  padding-top: 10px;
+  margin: 60px 0 0 20px;
+  font-size: 20px;
+}
+.judul-1 {
+  font-size: 40px;
+  margin: 5px 0 0 20px;
+  text-shadow: 3px 2px 2px rgb(0, 0, 0);
+}
+.card-shadow {
+  box-shadow: 3px 3px 5px 2px rgba(0, 0, 0, 0.9);
+}
+.card-javascript {
+  margin-top: -5px;
+}
+/* card content */
+.card {
+  padding: 0 5px 5px 0;
+  transition: 0.5s;
+}
+.card:hover {
+  transform: scale(1.05);
+}
+/* footer */
+footer {
+  margin-top: 50px;
+  opacity: 0.7;
+}
+.image img {
+  padding: 0;
+  margin-right: 100px;
+  width: 120px;
+  height: 120px;
+  transition: 2s ease-out;
+  float: left;
+}
+.image img:hover {
+  transform: scale(1.5);
+}
+footer a {
+  text-decoration: none;
+}
+footer .api a:hover {
+  color: blue;
+  text-decoration: underline;
+}
+.wrapper {
+  padding: 0;
+  margin: 0;
+}
+/* page 1 html */
+.col-8 {
+  background-color: white;
+  border-radius: 5px;
+}
+.judul-page {
+  text-align: center;
+  font-size: 40px;
+  font-weight: bold;
+  color: black;
+  padding: 20px 0 0 20px;
+}
+.judul-child {
+  text-align: left;
+  font-size: 25px;
+  font-weight: bold;
+  color: black;
+  margin-left: 10px;
+}
+.col-8 p {
+  text-align: justify;
+  font-size: 17px;
+  color: black;
+}
+.container-side a {
+  color: black;
+  text-decoration: none;
+  transition: 0.5s;
+}
+
+.container-side a:hover {
+  color: blue;
+}
+.box {
+  padding: 20px 0 0 20px;
+  width: 100%;
+  height: auto;
+  background-color: rgb(106, 97, 97);
+  border-radius: 5px;
+}
+.box,
+.syntax {
+  font-size: 18px;
+  color: white;
+  text-align: start;
+}
